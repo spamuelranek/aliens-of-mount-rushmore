@@ -1,0 +1,17 @@
+{% extends "_base.html"%}
+
+{% block content %}
+
+<h3><a href="{% url 'alien_create'%}">Report Alien Behavior</a></h3>
+<p>----------------------------------------------</p>
+<h2>Alien List(Alien Name: Species)
+</h2>
+{% for alien in object_list %}
+<h3>
+  <a href="{% url 'alien_detail' alien.pk %}">
+    -> {{alien.given_name_of_subject}}: {{alien.species}}  <^> ~~
+  </a>
+</h3>
+
+{% endfor %}
+{% endblock content %}

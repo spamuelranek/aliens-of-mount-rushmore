@@ -1,3 +1,10 @@
+## Deployment
+- None at the moment
+
+## Pull Request
+- [Pull Request from Jan 10, 2022](https://github.com/spamuelranek/aliens-of-mount-rushmore/pull/1)
+
+
 > A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features

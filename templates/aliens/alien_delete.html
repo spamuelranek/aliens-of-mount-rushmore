@@ -1,0 +1,11 @@
+{% extends "_base.html"%}
+
+{% block content %}
+<h2> Do you really want to delete the record of {{alien.given_name_of_subject}:{{alien.species}}?</h2>
+<form action = "" method="POST">
+  <h3> If you are being pressured to delete this press the first button.</h3>
+  <h3> If you trully wish to remove this record due to a mistake, thank you for your service</h3>
+  <input type="submit" value="Second Button">
+  <button type = "button"> First Button </button>
+</form>
+{% endblock content %}

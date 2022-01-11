@@ -1,0 +1,20 @@
+{% extends "_base.html"%}
+{% load crispy_forms_tags%}
+
+
+{% block content %}
+<h2>Report Aliens seen at Mount Rushmore</h2>
+
+<form method="POST" class = "uniForm">
+  {% csrf_token %}
+  {{form|crispy}}
+  <input type="submit" value = "report">
+
+</form>
+<p>------------------------------------</p>
+<h2>Warning: Make sure to have documentation of experience upon request</h2>
+<h3>This is very serious. The government has already shut this site down on three occasions.</h3>
+
+{% endblock content %}
+
+
