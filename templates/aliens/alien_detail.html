@@ -1,0 +1,18 @@
+{% extends "_base.html"%}
+
+{% block content %}
+<h2>This is the Report of {{alien.reporter}}</h2>
+<p>------------------------------------</p>
+<h4>It documents interaction with: {{alien.given_name_of_subject}}</h4>
+<p>------------------------------------</p>
+<p>Description: {{alien.description}}</p>
+<h4>Number of Apendages: {{alien.number_of_apendages}}</h4>
+<h4>Number of Eyes: {{alien.number_of_eyes}}</h4>
+<h4>Assumption of Species: {{alien.species}}</h4>
+<h4>Threat Level: {{alien.risk_level}}</h4>
+
+<h3><a href="{% url 'alien_update' alien.pk%}"> Manage This Report</a></h3> 
+<h3><a href="{% url 'alien_delete' alien.pk%}"> Delete This Report</a></h3> 
+
+
+{% endblock content %}
